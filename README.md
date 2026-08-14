@@ -69,7 +69,7 @@ Depois, acesse `http://localhost:5173` no navegador.
 
 ## 👤 Autor
 
-Desenvolvido por [seu nome aqui].
+Desenvolvido por Ryan Gomes Peçanha.
 
 ## 📄 Licença
 
