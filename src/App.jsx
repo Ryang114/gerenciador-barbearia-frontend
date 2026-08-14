@@ -3,10 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Botao from './Botao'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  function TestarClick(){
+    alert("Voce clicou no botão");
+  }
   return (
     <>
       <section id="center">
@@ -17,6 +21,9 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
+          <Botao texto="salvar" aoClicar={TestarClick}/>{/*aqui*/}<br/>
+          <Botao texto="Cancelar"/>{/*aqui*/}<br/>
+          <Botao texto="confirmar agendamento"/>{/*aqui*/}
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
