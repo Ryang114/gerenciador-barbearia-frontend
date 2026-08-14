@@ -1,16 +1,76 @@
-# React + Vite
+# 💈 Barbearia - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface web para o sistema de gerenciamento de barbearia, desenvolvida em **React**. Este frontend consome a API REST feita em Express (projeto backend separado) e oferece a interface para administrar agendamentos, clientes, barbeiros e serviços.
 
-Currently, two official plugins are available:
+## 📋 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Projeto de estudo/desenvolvimento, criado do zero para aprender React na prática, aplicado a um caso de uso real: um sistema de gerenciamento de barbearia.
 
-## React Compiler
+## 🚀 Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — biblioteca para construção da interface
+- **Vite** — ferramenta de build e servidor de desenvolvimento
+- **JavaScript (JSX)**
+- **CSS**
 
-## Expanding the ESLint configuration
+## 📁 Estrutura do projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+frontend/
+├── src/
+│   ├── assets/          # Imagens e ícones
+│   ├── components/      # Componentes reutilizáveis (Botao, Header, Card, etc.)
+│   ├── pages/            # Telas do sistema (Login, Agendamentos, Clientes...)
+│   ├── App.jsx           # Componente principal
+│   ├── App.css
+│   ├── main.jsx           # Ponto de entrada da aplicação
+│   └── index.css
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## ⚙️ Telas/funcionalidades previstas
+
+- [ ] Login / Cadastro de usuário
+- [ ] Agendamento de horários
+- [ ] Cadastro e gerenciamento de clientes
+- [ ] Cadastro de barbeiros e serviços
+- [ ] Dashboard com relatórios
+
+## 🛠️ Como rodar o projeto
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado
+- npm (já vem junto com o Node.js)
+
+### Passos
+
+```bash
+# instalar as dependências
+npm install
+
+# rodar o servidor de desenvolvimento
+npm run dev
+```
+
+Depois, acesse `http://localhost:5173` no navegador.
+
+> ⚠️ Este frontend depende da API backend (Express) rodando separadamente para funcionar por completo.
+
+## 📚 Conceitos de React aplicados no projeto
+
+- Componentes e JSX
+- Props (passagem de dados entre componentes)
+- Hooks (`useState`, e futuramente `useEffect`)
+- Estilização com CSS por componente
+- Consumo da API do backend (fetch/axios)
+- Organização em `components/` (peças reutilizáveis) e `pages/` (telas)
+
+## 👤 Autor
+
+Desenvolvido por [seu nome aqui].
+
+## 📄 Licença
+
+Projeto de uso livre para fins de estudo.
