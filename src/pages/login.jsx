@@ -3,6 +3,7 @@ import './login.css'
 function Login() {
 
     return (
+<<<<<<< HEAD
         <main className='login-container'>
             <header className='login-cabecalho'>
                 <h1 className='titulo'>Login</h1>
@@ -17,6 +18,7 @@ function Login() {
                 <button type="submit">Entrar</button>
             </form>
         </main>
+
     );
 }
 export default Login
