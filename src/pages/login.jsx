@@ -3,7 +3,7 @@ import './login.css'
 function Login() {
 
     return (
-<<<<<<< HEAD
+
         <main className='login-container'>
             <header className='login-cabecalho'>
                 <h1 className='titulo'>Login</h1>
@@ -12,9 +12,9 @@ function Login() {
 
             <form className='login-form'>
                 <span>Email:</span>
-                <input type="Email" placeholder='Email' />
+                <input type="email" placeholder='Email' />
                 <span>Senha</span>
-                <input type='passsoword' placeholder='Senha'></input>
+                <input type='password' placeholder='Senha'></input>
                 <button type="submit">Entrar</button>
             </form>
         </main>
