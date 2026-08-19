@@ -1,4 +1,5 @@
 import Footer from '../components/footer';
+import Botao from '../components/Botao';
 import './login.css'
 
 function Login() {
@@ -16,7 +17,7 @@ function Login() {
                 <input type="email" placeholder='Email' />
                 <span>Senha:</span>
                 <input type='password' placeholder='Senha'></input>
-              
+                <Botao texto='Entrar' tipo='submit' />
             </form>
 
             <Footer />
