@@ -13,10 +13,14 @@ function Login() {
             <form className='login-form'>
                 <span>Email:</span>
                 <input type="email" placeholder='Email' />
-                <span>Senha</span>
+                <span>Senha:</span>
                 <input type='password' placeholder='Senha'></input>
                 <button type="submit">Entrar</button>
             </form>
+
+            <footer className='login-footer'>
+                <p>&copy; 2026 Todos os direitos reservados</p>
+            </footer>
         </main>
 
     );
