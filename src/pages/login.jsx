@@ -1,3 +1,4 @@
+import Footer from '../components/footer';
 import './login.css'
 
 function Login() {
@@ -18,9 +19,7 @@ function Login() {
                 <button type="submit">Entrar</button>
             </form>
 
-            <footer className='login-footer'>
-                <p>&copy; 2026 Todos os direitos reservados</p>
-            </footer>
+            <Footer />
         </main>
 
     );
