@@ -59,17 +59,3 @@ input {
   width: 200px;
 }
 
-button {
-  color: var(--secondary-color);
-  background-color: var(--terciary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 15px;
-  height: 30px;
-  margin: 10px;
-  transition: transform 0.2s;
-  cursor: pointer;
-}
-
-button:hover{
-  transform: scale(1.2);
-}
