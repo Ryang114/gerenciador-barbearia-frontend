@@ -1,8 +1,17 @@
 import Footer from '../components/footer';
 import Botao from '../components/Botao';
 import './login.css'
+import { useState } from 'react';
 
 function Login() {
+
+    const [mostrarSenha, setMostrarSenha] = useState (false)
+
+    function MostrarSenha() {
+
+        setMostrarSenha(!MostrarSenha);
+
+    }
 
     return (
 
@@ -16,7 +25,7 @@ function Login() {
                 <span>Email:</span>
                 <input type="email" placeholder='Email' />
                 <span>Senha:</span>
-                <input type='password' placeholder='Senha'></input>
+                <input type={mostrarSenha ? 'text' : 'password' } placeholder='senha'></input>
                 <Botao texto='Entrar' tipo='submit' />
             </form>
 
