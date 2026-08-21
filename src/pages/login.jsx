@@ -7,9 +7,9 @@ function Login() {
 
     const [mostrarSenha, setMostrarSenha] = useState (false)
 
-    function MostrarSenha() {
+    function alternarSenha() {
 
-        setMostrarSenha(!MostrarSenha);
+        setMostrarSenha(!mostrarSenha);
 
     }
 
@@ -26,6 +26,7 @@ function Login() {
                 <input type="email" placeholder='Email' />
                 <span>Senha:</span>
                 <input type={mostrarSenha ? 'text' : 'password' } placeholder='senha'></input>
+                <span onClick={alternarSenha}>👁️</span>
                 <Botao texto='Entrar' tipo='submit' />
             </form>
 
