@@ -1,0 +1,11 @@
+.input_senha {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input_senha span {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}

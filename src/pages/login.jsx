@@ -1,5 +1,6 @@
 import Footer from '../components/footer';
 import Botao from '../components/Botao';
+import Inputsenha from '../components/inputsenha';
 import './login.css'
 import { useState } from 'react';
 
@@ -25,10 +26,7 @@ function Login() {
                 <span>Email:</span>
                 <input type="email" placeholder='Email' />
                 <span>Senha:</span>
-                <div className='input_senha'>
-                    <input type={mostrarSenha ? 'text' : 'password'} placeholder='senha'></input>
-                    <span onClick={alternarSenha}>👁️</span>
-                </div>
+                <Inputsenha/>
                 <Botao texto='Entrar' tipo='submit' />
             </form>
 
