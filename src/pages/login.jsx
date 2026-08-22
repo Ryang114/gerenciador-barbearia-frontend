@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function Login() {
 
-    const [mostrarSenha, setMostrarSenha] = useState (false)
+    const [mostrarSenha, setMostrarSenha] = useState(false)
 
     function alternarSenha() {
 
@@ -25,8 +25,10 @@ function Login() {
                 <span>Email:</span>
                 <input type="email" placeholder='Email' />
                 <span>Senha:</span>
-                <input type={mostrarSenha ? 'text' : 'password' } placeholder='senha'></input>
-                <span onClick={alternarSenha}>👁️</span>
+                <div className='input_senha'>
+                    <input type={mostrarSenha ? 'text' : 'password'} placeholder='senha'></input>
+                    <span onClick={alternarSenha}>👁️</span>
+                </div>
                 <Botao texto='Entrar' tipo='submit' />
             </form>
 
