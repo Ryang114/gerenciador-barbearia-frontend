@@ -4,15 +4,10 @@ import Inputsenha from '../components/inputsenha';
 import './login.css'
 import { useState } from 'react';
 
+
 function Login() {
 
-    const [mostrarSenha, setMostrarSenha] = useState(false)
-
-    function alternarSenha() {
-
-        setMostrarSenha(!mostrarSenha);
-
-    }
+    const [email, setEmail] = useState("")
 
     return (
 
@@ -24,9 +19,9 @@ function Login() {
 
             <form className='login-form'>
                 <span>Email:</span>
-                <input type="email" placeholder='Email' />
+                <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <span>Senha:</span>
-                <Inputsenha/>
+                <Inputsenha />
                 <Botao texto='Entrar' tipo='submit' />
             </form>
 
