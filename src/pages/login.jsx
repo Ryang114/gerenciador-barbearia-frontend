@@ -18,7 +18,7 @@ function Login() {
             </header>
 
             <form className='login-form'>
-                <span>Email:</span>
+                <span>Email:</span>k
                 <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <span>Senha:</span>
                 <Inputsenha />
