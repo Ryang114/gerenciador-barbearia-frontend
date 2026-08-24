@@ -4,15 +4,16 @@ import './inputsenha.css';
 function InputSenha() {
 
     const [mostrarSenha, setMostrarSenha] = useState(false)
+    const [senha, setSenha] = useState("")
 
     function alternarSenha() {
 
-        setMostrarSenha (!mostrarSenha);
+        setMostrarSenha(!mostrarSenha);
     }
     return (
 
         <div className='input_senha'>
-            <input type={mostrarSenha ? 'text' : 'password'} placeholder='senha'></input>
+            <input type={mostrarSenha ? 'text' : 'password'} placeholder='senha' value={senha} onChange={(e) => setSenha(e.target.value)}></input>
             <span onClick={alternarSenha}>👁️</span>
         </div>
 
