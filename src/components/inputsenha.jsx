@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './inputsenha.css';
 
-function InputSenha() {
+function InputSenha(props) {
 
     const [mostrarSenha, setMostrarSenha] = useState(false)
-    const [senha, setSenha] = useState("")
+    
 
     function alternarSenha() {
 
@@ -13,7 +13,7 @@ function InputSenha() {
     return (
 
         <div className='input_senha'>
-            <input type={mostrarSenha ? 'text' : 'password'} placeholder='senha' value={senha} onChange={(e) => setSenha(e.target.value)}></input>
+            <input type={mostrarSenha ? 'text' : 'password'} placeholder='senha' value={props.valor} onChange={(e) => props.aoMudar(e.target.value)}></input>
             <span onClick={alternarSenha}>👁️</span>
         </div>
 

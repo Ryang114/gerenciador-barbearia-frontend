@@ -8,7 +8,7 @@ import { useState } from 'react';
 function Login() {
 
     const [email, setEmail] = useState("")
-
+    const [senha, setSenha] = useState("")
     return (
 
         <main className='login-container'>
@@ -21,7 +21,7 @@ function Login() {
                 <span>Email:</span>
                 <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <span>Senha:</span>
-                <Inputsenha />
+                <Inputsenha valor={senha} aoMudar={setSenha} />
                 <Botao texto='Entrar' tipo='submit' />
             </form>
 
