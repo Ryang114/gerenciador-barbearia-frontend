@@ -9,6 +9,12 @@ function Login() {
 
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
+
+ function FazerLogin(){
+    console.log("Email:",email)
+    console.log("Senha",senha)
+ }
+
     return (
 
         <main className='login-container'>
@@ -22,7 +28,7 @@ function Login() {
                 <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <span>Senha:</span>
                 <Inputsenha valor={senha} aoMudar={setSenha} />
-                <Botao texto='Entrar' tipo='submit' />
+                <Botao texto='Entrar' tipo='submit' aoClicar={FazerLogin} />
             </form>
 
             <Footer />
