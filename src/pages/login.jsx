@@ -10,10 +10,10 @@ function Login() {
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
 
- function FazerLogin(){
-    console.log("Email:",email)
-    console.log("Senha",senha)
- }
+    function FazerLogin() {
+        console.log("Email:", email)
+        console.log("Senha", senha)
+    }
 
     return (
 
@@ -24,7 +24,7 @@ function Login() {
             </header>
 
             <form className='login-form'>
-                <span>Email:</span>k
+                <span>Email:</span>kk
                 <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <span>Senha:</span>
                 <Inputsenha valor={senha} aoMudar={setSenha} />
