@@ -9,10 +9,13 @@ function Login() {
 
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
+    const [mensagem, setMensagem] = useState("")
 
-    function FazerLogin() {
+    function FazerLogin(e) {
+        e.preventDefault();
         console.log("Email:", email)
         console.log("Senha", senha)
+        setMensagem('Tentando entrar com o email' + email);
     }
 
     return (
@@ -24,13 +27,13 @@ function Login() {
             </header>
 
             <form className='login-form'>
-                <span>Email:</span>kk
+                <span>Email:</span>
                 <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <span>Senha:</span>
                 <Inputsenha valor={senha} aoMudar={setSenha} />
                 <Botao texto='Entrar' tipo='submit' aoClicar={FazerLogin} />
             </form>
-
+            {mensagem && <p style={{ color: 'white' }}>{mensagem}</p>}
             <Footer />
         </main>
 
