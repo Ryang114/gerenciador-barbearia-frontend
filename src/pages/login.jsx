@@ -27,7 +27,7 @@ function Login() {
             </header>
 
             <form className='login-form'>
-                <span>Email:</span>kk
+                <span>Email:</span>kkk
                 <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <span>Senha:</span>
                 <Inputsenha valor={senha} aoMudar={setSenha} />
