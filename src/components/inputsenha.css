@@ -2,10 +2,21 @@
   position: relative;
   display: flex;
   align-items: center;
+  width: 200px;
+  margin: 0 auto;
+
+}
+
+.input_senha input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 30px;
+  box-sizing: border-box;
+
 }
 
 .input_senha span {
   position: absolute;
-  right: 5px;
+  right: 10px;
   cursor: pointer;
 }
