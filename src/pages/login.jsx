@@ -13,9 +13,16 @@ function Login() {
 
     function FazerLogin(e) {
         e.preventDefault();
+        fetch("http://localhost:3000/login", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify({ email: email, senha: senha })
+        });
         console.log("Email:", email)
         console.log("Senha", senha)
-        setMensagem('Tentando entrar com o email '+ email);
+        setMensagem('Tentando entrar com o email ' + email);
     }
 
     return (
