@@ -19,7 +19,13 @@ function Login() {
                 "content-type": "application/json"
             },
             body: JSON.stringify({ email: email, senha: senha })
-        });
+        })
+            .then((resposta) => resposta.json())
+            .then((dados) => {
+                console.log("Resposta do backend", dados)
+                setMensagem(dados.message)
+            })
+
         console.log("Email:", email)
         console.log("Senha", senha)
         setMensagem('Tentando entrar com o email ' + email);
