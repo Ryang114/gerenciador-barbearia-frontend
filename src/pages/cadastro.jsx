@@ -11,7 +11,7 @@ function Cadastro() {
     const [senha, setSenha] = useState("")
     const [confirmarSenha, setConfirmarSenha] = useState("")
 
-    function 
+    function k
 
     return (
         <main className="cadastro_container">
