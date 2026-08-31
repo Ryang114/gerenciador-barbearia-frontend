@@ -1,0 +1,63 @@
+.cadastro_container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+
+}
+
+.cadastro-cabecalho {
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+
+}
+
+.titulo_cadastro {
+  color: var(--secondary-color);
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.subtitulo_cadastro {
+  color: var(--secondary-color);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.cadastro-form {
+  border: 5px solid var(--terciary-color);
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0;
+  margin-top: 20px;
+  padding: 30px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+span {
+  align-items: right;
+  justify-content: right;
+  color: var(--secondary-color);
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+input {
+  background-color: var(--secondary-color);
+  margin: 0 auto 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  box-sizing: border-box;
+  outline: none;
+}
