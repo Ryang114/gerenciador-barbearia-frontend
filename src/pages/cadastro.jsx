@@ -2,7 +2,17 @@ import InputSenha from "../components/inputsenha"
 import Botao from "../components/Botao"
 import Footer from "../components/footer"
 import "./cadastro.css"
+import { useState } from "react"
+
+
+
 function Cadastro() {
+
+    const [senha, setSenha] = useState("")
+    const [confirmarSenha, setConfirmarSenha] = useState("")
+
+    function K
+
     return (
         <main className="cadastro_container">
             <header className="cadastro_cabecalho">
@@ -11,16 +21,16 @@ function Cadastro() {
             </header>
             <form className="cadastro-form">
                 <span>Nome Completo:</span>
-                <input type="text" placeholder="Nome"/>
+                <input type="text" placeholder="Nome" />
                 <span>Email:</span>
                 <input type="email" placeholder="Email" />
                 <span>Telefone:</span>
-                <input type="tel"  placeholder="Telefone"/>
+                <input type="tel" placeholder="Telefone" />
                 <span>Senha:</span>
                 <InputSenha />
                 <span>Corfirme sua senha:</span>
                 <InputSenha />
-                <Botao texto= "Cadastrar" type ="submit" />
+                <Botao texto="Cadastrar" tipo="submit" />
             </form>
             <Footer />
         </main>
