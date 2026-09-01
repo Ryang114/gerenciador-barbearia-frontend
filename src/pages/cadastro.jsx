@@ -8,14 +8,16 @@ function Cadastro() {
   const [senha, setSenha] = useState("");
   const [confirmarSenha, setConfirmarSenha] = useState("");
 
-  function Cadastrar() {
-    e.preventDefaut();
+  function Cadastrar(e) {
+    e.preventDefault();
 
-    if (senha == !confirmarSenha) console.log("As senhas não são iquais");
-    return;
+    if (senha !== confirmarSenha) {
+      console.log("As senhas não são iquais");
+      return;
+    }
+
+    console.log("As senhas são iguais");
   }
-
-  console.log("As senhas são iguais");
 
   return (
     <main className="cadastro_container">
@@ -31,10 +33,10 @@ function Cadastro() {
         <span>Telefone:</span>
         <input type="tel" placeholder="Telefone" />
         <span>Senha:</span>
-        <InputSenha valor={senha} aomudar={setSenha} />
-        <span>Corfirme sua senha:</span>
-        <InputSenha valor={confirmarSenha} aomudar={setConfirmarSenha} />
-        <Botao texto="Cadastrar" tipo="submit" aoClicar={Cadastrar}/>
+        <InputSenha valor={senha} aoMudar={setSenha} />
+        <span>Confirme sua senha:</span>
+        <InputSenha valor={confirmarSenha} aoMudar={setConfirmarSenha} />
+        <Botao texto="Cadastrar" tipo="submit" aoClicar={Cadastrar} />
       </form>
       <Footer />
     </main>
