@@ -1,76 +1,134 @@
-# 💈 Barbearia - Frontend
+# Gerenciador de Barbearia - Frontend
 
-Interface web para o sistema de gerenciamento de barbearia, desenvolvida em **React**. Este frontend consome a API REST feita em Express (projeto backend separado) e oferece a interface para administrar agendamentos, clientes, barbeiros e serviços.
+Interface web do projeto **Gerenciador de Agendamentos de Barbearia**.
 
-## 📋 Sobre o projeto
+Este frontend foi criado com React e Vite. Ele e responsavel pelas telas que o usuario vai usar para cadastro, login e, futuramente, agendamentos.
 
-Projeto de estudo/desenvolvimento, criado do zero para aprender React na prática, aplicado a um caso de uso real: um sistema de gerenciamento de barbearia.
+## Tecnologias
 
-## 🚀 Tecnologias utilizadas
+- React
+- Vite
+- React Router DOM
+- JavaScript/JSX
+- CSS
 
-- **React** — biblioteca para construção da interface
-- **Vite** — ferramenta de build e servidor de desenvolvimento
-- **JavaScript (JSX)**
-- **CSS**
+## Estado Atual
 
-## 📁 Estrutura do projeto
+O frontend atualmente possui:
 
+- Roteamento com `react-router-dom`.
+- Redirecionamento da rota `/` para `/login`.
+- Pagina de login.
+- Pagina de cadastro.
+- Componentes reutilizaveis iniciais.
+- Arquivos CSS separados por pagina/componente.
+
+Rotas atuais do frontend:
+
+```txt
+/           -> redireciona para /login
+/login      -> tela de login
+/cadastro   -> tela de cadastro
 ```
+
+## Estrutura Principal
+
+```txt
 frontend/
-├── src/
-│   ├── assets/          # Imagens e ícones
-│   ├── components/      # Componentes reutilizáveis (Botao, Header, Card, etc.)
-│   ├── pages/            # Telas do sistema (Login, Agendamentos, Clientes...)
-│   ├── App.jsx           # Componente principal
-│   ├── App.css
-│   ├── main.jsx           # Ponto de entrada da aplicação
-│   └── index.css
-├── index.html
-├── package.json
-└── vite.config.js
+  public/
+  src/
+    assets/
+    components/
+      Botao.jsx
+      botao.css
+      footer.jsx
+      footer.css
+      inputsenha.jsx
+      inputsenha.css
+    pages/
+      cadastro.jsx
+      cadastro.css
+      login.jsx
+      login.css
+    App.jsx
+    App.css
+    main.jsx
+    index.css
+  package.json
+  vite.config.js
 ```
 
-## ⚙️ Telas/funcionalidades previstas
+## Como Rodar
 
-- [ ] Login / Cadastro de usuário
-- [ ] Agendamento de horários
-- [ ] Cadastro e gerenciamento de clientes
-- [ ] Cadastro de barbeiros e serviços
-- [ ] Dashboard com relatórios
+Abra um terminal dentro da pasta `frontend`.
 
-## 🛠️ Como rodar o projeto
-
-### Pré-requisitos
-- [Node.js](https://nodejs.org/) instalado
-- npm (já vem junto com o Node.js)
-
-### Passos
+Instale as dependencias, se ainda nao tiver instalado:
 
 ```bash
-# instalar as dependências
 npm install
+```
 
-# rodar o servidor de desenvolvimento
+Inicie o servidor de desenvolvimento:
+
+```bash
 npm run dev
 ```
 
-Depois, acesse `http://localhost:5173` no navegador.
+Depois acesse no navegador o endereco mostrado no terminal. Normalmente sera:
 
-> ⚠️ Este frontend depende da API backend (Express) rodando separadamente para funcionar por completo.
+```txt
+http://localhost:5173
+```
 
-## 📚 Conceitos de React aplicados no projeto
+## Backend Necessario
 
-- Componentes e JSX
-- Props (passagem de dados entre componentes)
-- Hooks (`useState`, e futuramente `useEffect`)
-- Estilização com CSS por componente
-- Consumo da API do backend (fetch/axios)
-- Organização em `components/` (peças reutilizáveis) e `pages/` (telas)
+Para as telas de cadastro e login funcionarem completamente, o backend precisa estar rodando em outro terminal:
 
-## 👤 Autor
+```txt
+http://localhost:3000
+```
 
-Desenvolvido por Ryan Gomes Peçanha.
+Rotas do backend usadas ou planejadas para este frontend:
 
-## 📄 Licença
+```txt
+POST /cadastro
+POST /login
+```
 
-Projeto de uso livre para fins de estudo.
+## Como O App Esta Organizado
+
+O arquivo `App.jsx` controla as rotas principais:
+
+```jsx
+<Routes>
+  <Route path="/" element={<Navigate to="/login" />} />
+  <Route path="/login" element={<Login />} />
+  <Route path="/cadastro" element={<Cadastro />} />
+</Routes>
+```
+
+As telas maiores ficam em `src/pages`.
+
+Os componentes menores e reutilizaveis ficam em `src/components`.
+
+## Conceitos De React Praticados
+
+- Componentes
+- Props
+- Paginas separadas
+- CSS por componente/pagina
+- Rotas com React Router
+- Redirecionamento com `Navigate`
+
+## Proximos Passos
+
+- Conectar a tela de cadastro com `POST /cadastro`.
+- Conectar a tela de login com `POST /login`.
+- Mostrar mensagens de erro e sucesso para o usuario.
+- Criar uma pagina apos o login, como dashboard ou agendamentos.
+- Criar fluxo de agendamento no frontend.
+- Melhorar padronizacao dos nomes dos componentes.
+
+## Autor
+
+Desenvolvido por Ryan Gomes Pecanha como projeto de estudo full stack.
