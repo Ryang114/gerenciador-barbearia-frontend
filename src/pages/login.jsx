@@ -42,7 +42,7 @@ function Login() {
             </header>
 
             <form className='login-form'>
-                <label>Email:</label>
+                <label>Email:</label>k
                 <div className='campo_icone'>
                     <FiMail className='icone_input' />
                     <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
