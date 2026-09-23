@@ -12,7 +12,11 @@
   color: var(--secondary-color);
   font-size: 30px;
   font-weight: bold;
+  padding-top: 40px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -24,15 +28,17 @@
 
 .titulo {
   color: var(--secondary-color);
-  margin-top: 20px;
+  font-size: 28px;
+  margin-top: 8px;
   text-align: center;
 
 }
 
 .subtitulo-login {
-  color: var(--secondary-color);
-  font-size: 20px;
+  color: #8a8a8a;
+  font-size: 13px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .login-form {
@@ -57,6 +63,7 @@
 
 .campo_icone input {
   padding-left: 38px;
+  background-color: #141414;
 }
 
 span {
@@ -69,8 +76,9 @@ span {
 
 .icone_input {
   position: absolute;
-  left: 12px;
-  color: #666;
+  left: 20px;
+  top: 21%;
+  color: #666666;
   font-size: 16px;
 }
 
@@ -92,4 +100,21 @@ input {
   margin-top: 15px;
   max-width: 250px;
 
+}
+
+.link_cadastro {
+  color: var(--secondary-color);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.destaque {
+  color: var(--terciary-color);
+  cursor: pointer;
+}
+
+.destaque:hover{
+  border-bottom:1px solid var(--terciary-color);
 }

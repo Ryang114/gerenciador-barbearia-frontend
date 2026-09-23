@@ -42,7 +42,7 @@ function Login() {
             </header>
 
             <form className='login-form'>
-                <label>Email:</label>k
+                <label>Email:</label>
                 <div className='campo_icone'>
                     <FiMail className='icone_input' />
                     <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -51,6 +51,7 @@ function Login() {
                 <Inputsenha valor={senha} aoMudar={setSenha} />
                 {mensagem && <p className='mensagem_login'>{mensagem}</p>}
                 <Botao texto='Entrar' tipo='submit' aoClicar={FazerLogin} />
+              <p className='link_cadastro'>Não tem conta?<span className='destaque'> Cadastre-se</span></p>
             </form>
             <Footer />
         </main>
