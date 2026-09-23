@@ -38,7 +38,7 @@ function Login() {
             <header className='login-cabecalho'>
                 <FiScissors className='icone_topo' />
                 <h1 className='titulo'>Login</h1>
-                <h2 className='subtitulo-login'>Seja bem vindo a nossa barbearia</h2>k
+                <h2 className='subtitulo-login'>Seja bem vindo a nossa barbearia</h2>kk
             </header>
 
             <form className='login-form'>
