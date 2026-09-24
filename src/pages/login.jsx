@@ -38,14 +38,14 @@ function Login() {
             <header className='login-cabecalho'>
                 <FiScissors className='icone_topo' />
                 <h1 className='titulo'>Login</h1>
-                <h2 className='subtitulo-login'>Seja bem vindo a nossa barbearia</h2>kk
+                <h2 className='subtitulo-login'>Seja bem vindo a nossa barbearia, entre para agendar o seu horario!</h2>
             </header>
 
             <form className='login-form'>
                 <label>Email:</label>
                 <div className='campo_icone'>
                     <FiMail className='icone_input' />
-                    <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input type="email" placeholder='seuemail@gmail.com' value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <label>Senha:</label>
                 <Inputsenha valor={senha} aoMudar={setSenha} />
@@ -53,7 +53,6 @@ function Login() {
                 <Botao texto='Entrar' tipo='submit' aoClicar={FazerLogin} />
               <p className='link_cadastro'>Não tem conta?<span className='destaque'> Cadastre-se</span></p>
             </form>
-            <Footer />
         </main>
 
     );
