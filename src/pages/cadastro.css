@@ -5,7 +5,7 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--primary-color);
-
+  
 }
 
 .cadastro-cabecalho {
@@ -13,34 +13,70 @@
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 20px;
+  display: flex;
+}
 
+.icone_topo {
+  color: var(--terciary-color);
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  margin-left: 65px;
 }
 
 .titulo_cadastro {
   color: var(--secondary-color);
-  margin-top: 20px;
+  font-size: 28px;
+  margin-top: 8px;
   text-align: center;
-
 }
 
 .subtitulo_cadastro {
-  color: var(--secondary-color);
-  font-size: 20px;
+  color: #8a8a8a;
+  font-size: 13px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .cadastro-form {
-  border: 5px solid var(--terciary-color);
-  border-radius: 15px;
   background-color: var(--primary-color);
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.cadastro-form label {
+  color: #8a8a8a;
+  display: block;
+  padding-bottom: 10px;
+  width: 200px;
+  text-align: left;
+}
+
+.campo-icone {
+  position: relative;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin: auto 0;
-  margin-top: 20px;
-  padding: 30px;
-  width: 300px;
+  margin-bottom: 10px;
+}
+
+.cadastro-form input {
+  width: 200px;
   box-sizing: border-box;
+}
+
+.icone_input {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
 }
 
 span {
@@ -52,12 +88,14 @@ span {
 }
 
 input {
-  background-color: var(--secondary-color);
+  background-color: #141414;
+  color: var(--secondary-color);
   margin: 0 auto 10px auto;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
   width: 200px;
   box-sizing: border-box;
   outline: none;
+
 }

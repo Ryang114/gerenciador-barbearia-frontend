@@ -2,6 +2,7 @@ import InputSenha from "../components/inputsenha";
 import Botao from "../components/Botao";
 import Footer from "../components/footer";
 import "./cadastro.css";
+import { FiMail, FiScissors } from 'react-icons/fi';
 import { useState } from "react";
 
 function Cadastro() {
@@ -22,23 +23,26 @@ function Cadastro() {
   return (
     <main className="cadastro_container">
       <header className="cadastro_cabecalho">
+        <FiScissors className='icone_topo' />
         <h1 className="titulo_cadastro">Cadastro</h1>
-        <h2 className="subtitulo_cadastro">Por favor realize o cadastro caso não tenha uma senha</h2>
+        <h2 className="subtitulo_cadastro">Crie a sua conta na barbearia</h2>
       </header>
       <form className="cadastro-form">
-        <span>Nome Completo:</span>
-        <input type="text" placeholder="Nome" />
-        <span>Email:</span>
-        <input type="email" placeholder="Email" />
-        <span>Telefone:</span>
-        <input type="tel" placeholder="Telefone" />
-        <span>Senha:</span>
+        <label>Nome:</label>
+        <input type="text" placeholder="Seu Nome" />
+        <label>Email:</label>
+        <div className="campo_icone">
+          <FiMail className='icone_input' />
+          <input type="email" placeholder='seuemail@gmail.com' />
+        </div>
+        <label>Telefone:</label>
+        <input type="tel" placeholder="(21) 99999-9999" />
+        <label>Senha:</label>
         <InputSenha valor={senha} aoMudar={setSenha} />
-        <span>Confirme sua senha:</span>
+        <label>Confirme sua senha:</label>
         <InputSenha valor={confirmarSenha} aoMudar={setConfirmarSenha} />
         <Botao texto="Cadastrar" tipo="submit" aoClicar={Cadastrar} />
       </form>
-      <Footer />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 .login-container {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--primary-color);
@@ -13,13 +13,14 @@
   color: var(--secondary-color);
   font-size: 30px;
   font-weight: bold;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
+
 
 .icone_topo {
   color: var(--terciary-color);
@@ -44,6 +45,7 @@
 
 .login-form {
   background-color: var(--primary-color);
+  margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 50px;
   box-sizing: border-box;
@@ -51,12 +53,11 @@
 
 .login-form label {
   color: #8a8a8a;
-  display:block;
-  padding-bottom:10px;
+  display: block;
+  padding-bottom: 10px;
 }
 
 .campo_icone {
-
   position: relative;
   display: flex;
   align-items: center;
