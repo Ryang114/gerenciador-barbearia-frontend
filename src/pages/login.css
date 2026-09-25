@@ -25,7 +25,8 @@
 .icone_topo {
   color: var(--terciary-color);
   font-size: 28px;
-  margin-bottom: 8px;
+  margin-top: 200px;
+  margin-right: 70px;
 }
 
 .titulo {
