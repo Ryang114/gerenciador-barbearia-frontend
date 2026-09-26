@@ -9,7 +9,7 @@ function Homeusuario() {
                 <main className="homeusuario_container">
                         <header className="home_usuario_cabecalho">
                                 <FiScissors className="icone_topo" />
-                                <h1 className="titulo_usuario">Olá Ryan</h1>
+                                <h1 className="titulo_usuario">Olá Ryan</h1>k
                                 <h2 className="subtitulo_usario">Seja bem vindo de volta</h2>
                         </header>
 
