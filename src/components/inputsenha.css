@@ -9,14 +9,19 @@
 
 .input_senha input {
   width: 100%;
-  padding: 10px;
+  background-color: #141414;
+  color: var(--secondary-color);
+  border: 1px solid #2a2a2a;
+  padding-top: 10px;
+  padding-bottom: 14px;
   padding-right: 30px;
   box-sizing: border-box;
-
+  outline: none;
 }
 
 .input_senha span {
   position: absolute;
-  right: 10px;
+  right: 11px;
+  color: #666666;
   cursor: pointer;
 }

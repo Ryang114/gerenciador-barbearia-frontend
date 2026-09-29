@@ -1,0 +1,40 @@
+.homeusuario_container {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin: 0 auto;
+    font-family: inherit;
+
+}
+
+.homeusuario_cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.icone_topo {
+    color: var(--terciary-color);
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.titulo_usuario{
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.subtitulo_usuario {
+    color:#8a8a8a;
+    font-size: 13px;
+    margin: 6px 0 0;
+    text-align: center;
+}

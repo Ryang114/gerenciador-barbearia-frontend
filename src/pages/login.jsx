@@ -2,6 +2,7 @@ import Footer from '../components/footer';
 import Botao from '../components/Botao';
 import Inputsenha from '../components/inputsenha';
 import './login.css'
+import { FiMail, FiScissors } from 'react-icons/fi';
 import { useState } from 'react';
 
 
@@ -35,19 +36,27 @@ function Login() {
 
         <main className='login-container'>
             <header className='login-cabecalho'>
+                <FiScissors className='icone_topo' />
                 <h1 className='titulo'>Login</h1>
-                <h2 className='subtitulo-login'>Seja bem vindo a nossa barbearia</h2>
+                <h2 className='subtitulo-login'>Seja bem vindo a nossa barbearia, entre para agendar o seu horario!</h2>
             </header>
 
             <form className='login-form'>
                 <label>Email:</label>
+<<<<<<< HEAD
                 <label type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+=======
+                <div className='campo_icone'>
+                    <FiMail className='icone_input' />
+                    <input type="email" placeholder='seuemail@gmail.com' value={email} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+>>>>>>> 0a8c68adcc31385a42793f133a07b6b694afce1f
                 <label>Senha:</label>
                 <Inputsenha valor={senha} aoMudar={setSenha} />
                 {mensagem && <p className='mensagem_login'>{mensagem}</p>}
                 <Botao texto='Entrar' tipo='submit' aoClicar={FazerLogin} />
+              <p className='link_cadastro'>Não tem conta?<span className='destaque'> Cadastre-se</span></p>
             </form>
-            <Footer />
         </main>
 
     );
