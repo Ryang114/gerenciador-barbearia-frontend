@@ -40,9 +40,9 @@ function Login() {
             </header>
 
             <form className='login-form'>
-                <span>Email:</span>k
-                <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
-                <span>Senha:</span>
+                <label>Email:</label>
+                <label type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                <label>Senha:</label>
                 <Inputsenha valor={senha} aoMudar={setSenha} />
                 {mensagem && <p className='mensagem_login'>{mensagem}</p>}
                 <Botao texto='Entrar' tipo='submit' aoClicar={FazerLogin} />

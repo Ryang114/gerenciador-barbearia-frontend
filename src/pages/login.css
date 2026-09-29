@@ -52,11 +52,12 @@ span {
 }
 
 input {
-  background-color: var(--secondary-color);
+  background-color: #141414;
+  color: var(--secondary-color);
   margin: 0 auto 10px auto;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
   width: 200px;
   box-sizing: border-box;
   outline: none;
