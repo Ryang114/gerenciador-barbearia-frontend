@@ -5,28 +5,26 @@ import Footer from "../components/footer";
 
 function Homeusuario() {
 
-        const [usuario, SetUsuario] = useState("");
-        function Aparecernomedosuario(){
-                
-                                  /*fluxo - LOGICA 
-             Isso so vai acontecer depois que o usuairo se cadastrar no banco de dados pois so fuciona depois que o usuario se cadastrar, o usuario ta cadastrado no sistema,ai belez quando usuario acessar a pagina home do usuario o nome que ele cadastro no cadastro vai aparecer na frse de saldação TIPO "Olá [nome_do_usuario]" então eu acho que teria que ter uma const = nome para isso  
+        const [usuario, SetUsuario] = useState( 
+        function () { localStorage.getItem("nome") || "" });
+
+        /*fluxo - LOGICA 
+Isso so vai acontecer depois que o usuairo se cadastrar no banco de dados pois so fuciona depois que o usuario se cadastrar, o usuario ta cadastrado no sistema,ai belez quando usuario acessar a pagina home do usuario o nome que ele cadastro no cadastro vai aparecer na frse de saldação TIPO "Olá [nome_do_usuario]" então eu acho que teria que ter uma const = nome para isso  
 
 
-                USUARIO CADASTRADO => USUARIO FAZ O LOGIN => A VARIAVEL NOME QUE ESTA NO VAI VIR PARA O H2 */
-
-        };
+USUARIO CADASTRADO => USUARIO FAZ O LOGIN => A VARIAVEL NOME QUE ESTA NO VAI VIR PARA O H2 */
 
         return (
                 <main className="homeusuario_container">
                         <header className="homeusuario_cabecalho">
                                 <FiScissors className="icone_topo" />
-                                <h1 className="titulo_usuario">Olá Ryan</h1>k
+                                <h1 className="titulo_usuario">Olá {usuario}</h1>
                                 <h2 className="subtitulo_usuario">Seja bem vindo de volta</h2>
                         </header>
 
                         <span>Proximo agendamento</span>
                         <label className="ficha_agendamento">
-                               
+
                         </label>
 
                         <section className="servicos">
